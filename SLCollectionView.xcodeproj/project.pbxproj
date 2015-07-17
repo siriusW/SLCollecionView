@@ -18,7 +18,6 @@
 		CDD5746A1B4BAA70007B43EB /* SLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CDD574681B4BAA70007B43EB /* SLCollectionViewCell.m */; };
 		CDD5746E1B4BC50E007B43EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CDD5746C1B4BC50E007B43EB /* Main.storyboard */; };
 		CDEFE9631B4CC77C00F063AF /* ImageModel.m in Sources */ = {isa = PBXBuildFile; fileRef = CDEFE9621B4CC77C00F063AF /* ImageModel.m */; };
-		CDEFE9651B4CC86B00F063AF /* cell04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CDEFE9641B4CC86B00F063AF /* cell04.jpg */; };
 		CF67AF02ECD99912E12EC8BE /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3D6BA25DA987F3971AED576 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -56,7 +55,6 @@
 		CDD5746D1B4BC50E007B43EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CDEFE9611B4CC77C00F063AF /* ImageModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageModel.h; sourceTree = "<group>"; };
 		CDEFE9621B4CC77C00F063AF /* ImageModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageModel.m; sourceTree = "<group>"; };
-		CDEFE9641B4CC86B00F063AF /* cell04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = cell04.jpg; path = "../../../ios开发图片库/UIScrollView/cell04.jpg"; sourceTree = "<group>"; };
 		DE18899436BA302035C5EC9B /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -142,7 +140,6 @@
 		CDD5743B1B4B863C007B43EB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				CDEFE9641B4CC86B00F063AF /* cell04.jpg */,
 				CDD5743C1B4B863C007B43EB /* Info.plist */,
 				CDD5743D1B4B863C007B43EB /* main.m */,
 			);
@@ -250,7 +247,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CDD5744C1B4B863C007B43EB /* LaunchScreen.xib in Resources */,
-				CDEFE9651B4CC86B00F063AF /* cell04.jpg in Resources */,
 				CDD574491B4B863C007B43EB /* Images.xcassets in Resources */,
 				CDD5746E1B4BC50E007B43EB /* Main.storyboard in Resources */,
 			);
