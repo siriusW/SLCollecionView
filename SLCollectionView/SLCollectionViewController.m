@@ -155,16 +155,11 @@ CGFloat const Width = 375;
 
 
 -(void)loadData{
-//    self.index = self.imageMoreArray.count;
 
     
     int index = 0;
     for (NSString *url in self.imageMoreArray) {
-        NSIndexPath *indexPath = [NSIndexPath indexPathForItem:index inSection:0];
-        
-//        NSString *filename = [NSString stringWithFormat:@"%ld", indexPath.row];
-//        NSString *cachefile = [NSTemporaryDirectory() stringByAppendingPathComponent: filename];
-//        UIImage *image = [UIImage imageWithContentsOfFile:cachefile];
+
         UIImage *image;
         
         __block UIImage *weakImage = image;
@@ -215,8 +210,6 @@ CGFloat const Width = 375;
     self.flowLayout.ColumnCount = 2.0;
     self.flowLayout.delegate = self;
     
-    
-//    [self addObserver:self forKeyPath:@"imageHarray" options:NSKeyValueObservingOptionNew|NSKeyValueObservingOptionOld context:nil];
 }
 
 -(void)moreAction:(UIButton *)btn{
@@ -229,9 +222,6 @@ CGFloat const Width = 375;
 }
 
 
--(void)viewDidDisappear:(BOOL)animated{
-//    [self.imageHarray removeObserver:self forKeyPath:@"ArrayChange" context:nil];
-}
 
 /*
 #pragma mark - Navigation
@@ -256,72 +246,18 @@ CGFloat const Width = 375;
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     SLCollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"WSCell" forIndexPath:indexPath];
     
-    // Configure the cell
+
     cell.titleLabel.text = @"好漂亮，是滴哦撒";
     cell.priceLabel.text = @"¥ 100";
-//    NSString *str = self.imageArray[indexPath.row];
     ImageModel *model = self.imageModelArray[indexPath.row];
     cell.imageTitle.image = model.image;
-//    [cell setImage:self.imageArray[indexPath.row]];
-    
     return cell;
 }
 
 
--(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
-    
-    NSLog(@"Change");
-}
-
--(NSUInteger)countOfImageHarray{
-    return [self.imageHarray count];
-    
-}
-
--(id)objectInImageHarrayAtIndex:(NSUInteger)index{
-    
-    return self.imageHarray[index];
-}
-
--(void)insertObject:(NSString *)object inImageHarrayAtIndex:(NSUInteger)index{
-    [self.imageHarray insertObject:object atIndex:index];
-}
-
--(void)removeObjectFromImageHarrayAtIndex:(NSUInteger)index{
-    [self.imageHarray removeObjectAtIndex:index];
-}
 
 
 #pragma mark <UICollectionViewDelegate>
-
-/*
- Uncomment this method to specify if the specified item should be highlighted during tracking
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
-	return YES;
-}
-*/
-
-/*
-// Uncomment this method to specify if the specified item should be selected
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    return YES;
-}
-*/
-
-/*
-// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
-- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
-	return NO;
-}
-
-- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	return NO;
-}
-
-- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
-	
-}
-*/
 #pragma mark <UICollectionViewLayoutDelegate>
 
 -(CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath{

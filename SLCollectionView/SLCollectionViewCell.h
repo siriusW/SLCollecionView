@@ -12,5 +12,5 @@
 @property (strong, nonatomic) IBOutlet UIImageView *imageTitle;
 @property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @property (strong, nonatomic) IBOutlet UILabel *priceLabel;
--(void)setImage:(NSString *)url;
+
 @end
